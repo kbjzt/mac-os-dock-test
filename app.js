@@ -10,6 +10,14 @@
 function between(val, min, max) {
     return Math.max(min, Math.min(val, max));
 }
+/**
+ * Gère le scaling en fonction de la distance
+ * @param {number} d 
+ */
+
+function scaling(d) {
+    Math.max(Math.min(-0.2 * Math.pow(d, 2) + 1.05, 1), 0);
+}
 
 /**
  * @property {HTMLElement} root
